@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">	
+	<title>Copa 2018 - Fase Final</title>
+	<link rel="icon" href="img/logo-copa.png">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/tabela.css">
+</head>
+<body>
+	
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<span id="tituloGrupo">Fase de Grupo</span>
+		<a class="grupo" href="GPA.html">Grupo A</a>
+		<a class="grupo" href="GPB.html">Grupo B</a>
+		<a class="grupo" href="GPC.html">Grupo C</a>
+		<a class="grupo" href="GPD.html">Grupo D</a>
+		<a class="grupo" href="GPE.html">Grupo E</a>
+		<a class="grupo" href="GPF.html">Grupo F</a>
+		<a class="grupo" href="GPG.html">Grupo G</a>
+		<a class="grupo" href="GPH.html">Grupo H</a>
+		<a class="faseFinal" href="FF.html">Fase Final</a>
+		<center><button class="botaoReset" onclick="reset2()" type="button">RESETAR</button></center>
+	</div>
+
+	<span class="abrir" onclick="openNav()">&#9776; Abrir</span>
+
+	<div style="display: none;" id="colocacao">
+		<table class="tabela" style="width: 76%;">
+			<tr>
+				<th style="color: #127912;">&#9867;</th>
+				<td><img class="bandeira" src=""></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th style="color: #127912;">&#9867;</th>
+				<td><img class="bandeira" src=""></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th style="color: #127912;">&#9867;</th>
+				<td><img class="bandeira" src=""></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="grid-container">
+	  
+		<div class="grid-item" id="oitavas">
+
+			
+			<table class="tabelaOitavas topo3">
+				
+				<tr id="oitava1jogoA">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>1° A</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(oitava1jogoA, oitava1jogoB, quartas1jogoA, false, '', 0)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-bottom: 0;">30/06 - 15:00</td>
+				</tr>
+
+				<tr id="oitava1jogoB">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>2° B</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(oitava1jogoA, oitava1jogoB, quartas1jogoA, false, '', 0)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-top: 0;">Sóchi - Estádio Fisht</td>
+				</tr>
+			</table>
+			
+			<table class="tabelaOitavas">
+				<tr id="oitava2jogoA">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>1° C</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(oitava2jogoA, oitava2jogoB, quartas1jogoB, false, '', 1)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-bottom: 0;">30/06 - 11:00</td>
+				</tr>
+
+				<tr id="oitava2jogoB">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>2° D</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(oitava2jogoA, oitava2jogoB, quartas1jogoB, false, '', 1)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-top: 0;">Cazã - Arena Kazan</td>
+				</tr>
+			</table>
+			
+			<table class="tabelaOitavas">
+				<tr id="oitava3jogoA">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>1° E</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(oitava3jogoA, oitava3jogoB, quartas2jogoA, false, '', 2)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-bottom: 0;">02/07 - 11:00</td>
+				</tr>
+
+				<tr id="oitava3jogoB">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>2° F</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(oitava3jogoA, oitava3jogoB, quartas2jogoA, false, '', 2)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-top: 0;">Samara - Arena Samara</td>
+				</tr>
+			</table>
+
+			<table class="tabelaOitavas">
+				<tr id="oitava4jogoA">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>1° G</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(oitava4jogoA, oitava4jogoB, quartas2jogoB, false, '', 3)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-bottom: 0;">02/07 - 15:00</td>
+				</tr>
+
+				<tr id="oitava4jogoB">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>2° H</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(oitava4jogoA, oitava4jogoB, quartas2jogoB, false, '', 3)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-top: 0;">Rostov do Don - Arena Rostov</td>
+				</tr>
+			</table>
+
+			<table class="tabelaOitavas">
+				<tr id="oitava5jogoA">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>1° B</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(oitava5jogoA, oitava5jogoB, quartas3jogoA, false, '', 4)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-bottom: 0;">01/07 - 11:00</td>
+				</tr>
+
+				<tr id="oitava5jogoB">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>2° A</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(oitava5jogoA, oitava5jogoB, quartas3jogoA, false, '', 4)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-top: 0;">Moscou - Estádio Lujniki</td>
+				</tr>
+			</table>
+
+			<table class="tabelaOitavas">
+				<tr id="oitava6jogoA">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>1° D</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(oitava6jogoA, oitava6jogoB, quartas3jogoB,  false, '', 5)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-bottom: 0;">01/07 - 15:00</td>
+				</tr>
+
+				<tr id="oitava6jogoB">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>2° C</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(oitava6jogoA, oitava6jogoB, quartas3jogoB,  false, '', 5)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-top: 0;">Níjni Novgorod - Estádio de Níjni Novgorod</td>
+				</tr>
+			</table>
+
+			<table class="tabelaOitavas">
+				<tr id="oitava7jogoA">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>1° F</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(oitava7jogoA, oitava7jogoB, quartas4jogoA,  false, '', 6)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-bottom: 0;">03/07 - 11:00</td>
+				</tr>
+
+				<tr id="oitava7jogoB">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>2° E</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(oitava7jogoA, oitava7jogoB, quartas4jogoA,  false, '', 6)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-top: 0;">São Petersburgo - Zenit Arena</td>
+				</tr>
+			</table>
+			
+			<table class="tabelaOitavas">
+				<tr id="oitava8jogoA">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>1° H</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(oitava8jogoA, oitava8jogoB, quartas4jogoB,  false, '', 7)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-bottom: 0;">03/07 - 15:00</td>
+				</tr>
+
+				<tr id="oitava8jogoB">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>2° G</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(oitava8jogoA, oitava8jogoB, quartas4jogoB,  false, '', 7)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-top: 0;">Moscou - Arena Otkrytie</td>
+				</tr>
+			</table>
+		</div>
+		  
+		<div class="grid-item" id="quartas">
+			
+			<table class="tabelaQuartas topo1">
+				<tr id="quartas1jogoA">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>?</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(quartas1jogoA, quartas1jogoB, semi1jogoA,  false, '', 8)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-bottom: 0;">06/07 - 11:00</td>
+				</tr>
+
+				<tr id="quartas1jogoB">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>?</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(quartas1jogoA, quartas1jogoB, semi1jogoA,  false, '', 8)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-top: 0;">Níjni Novgorod - Estádio de Níjni Novgorod</td>
+				</tr>
+			</table>
+			
+			<table class="tabelaQuartas">
+				<tr id="quartas2jogoA">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>?</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(quartas2jogoA, quartas2jogoB, semi1jogoB,  false, '', 9)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-bottom: 0;">06/07 - 15:00</td>
+				</tr>
+
+				<tr id="quartas2jogoB">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>?</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(quartas2jogoA, quartas2jogoB, semi1jogoB,  false, '', 9)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-top: 0;">Cazã - Arena Kazan</td>
+				</tr>
+			</table>
+			
+			<table class="tabelaQuartas">
+				<tr id="quartas3jogoA">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>?</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(quartas3jogoA, quartas3jogoB, semi2jogoA,  false, '', 10)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-bottom: 0;">07/07 - 11:00</td>
+				</tr>
+
+				<tr id="quartas3jogoB">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>?</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(quartas3jogoA, quartas3jogoB, semi2jogoA,  false, '', 10)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-top: 0;">Samara - Arena Samara</td>
+				</tr>
+			</table>
+			
+			<table class="tabelaQuartas">
+				<tr id="quartas4jogoA">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>?</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(quartas4jogoA, quartas4jogoB, semi2jogoB,  false, '', 11)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-bottom: 0;">07/07 - 15:00</td>
+				</tr>
+
+				<tr id="quartas4jogoB">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>?</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(quartas4jogoA, quartas4jogoB, semi2jogoB,  false, '', 11)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-top: 0;">Sóchi - Estádio Fisht</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="grid-item" id="semi">
+		
+			<table class="tabelaSemi topo2">
+				<tr id="semi1jogoA">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>?</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(semi1jogoA, semi1jogoB, final1jogoA,  true, final2jogoA, 12)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-bottom: 0;">10/07 - 15:00</td>
+				</tr>
+
+				<tr id="semi1jogoB">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>?</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(semi1jogoA, semi1jogoB, final1jogoA,  true, final2jogoA, 12)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-top: 0;">São Petersburgo - Zenit Arena</td>
+				</tr>
+			</table>
+			
+			<table class="tabelaSemi">
+				<tr id="semi2jogoA">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>?</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(semi2jogoA, semi2jogoB, final1jogoB,  true, final2jogoB, 13)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-bottom: 0;">11/07 - 15:00</td>
+				</tr>
+
+				<tr id="semi2jogoB">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>?</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="partida(semi2jogoA, semi2jogoB, final1jogoB,  true, final2jogoB, 13)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-top: 0;">Moscou - Estádio Lujniki</td>
+				</tr>
+			</table>
+		</div>  
+		
+		<div class="grid-item" id="final">
+			<table class="tabelaFinal">
+				<tr id="final1jogoA">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>?</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="finalist(final1jogoA, final1jogoB, 14, true, false)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-bottom: 0;">03/07 - 15:00</td>
+				</tr>
+
+				<tr id="final1jogoB">
+					<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+					<td>?</td>
+					<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="finalist(final1jogoA, final1jogoB, 14, true, false)"></td>
+					<td style="display: none;"></td>
+					<td style="font-size: 15px; border-top: 0;">Moscou - Arena Otkrytie</td>
+				</tr>
+			</table>
+
+			<tbody>
+				<table class="terc">
+					<tr>
+						<td>TERCEIRO LUGAR</td>
+					</tr>
+				</table>
+				<table class="terc1">
+					<tr id="final2jogoA">
+						<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+						<td>?</td>
+						<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="finalist(final2jogoA, final2jogoB, 15, false, true)"></td>
+						<td style="display: none;"></td>
+						<td style="font-size: 15px; border-bottom: 0;">03/07 - 15:00</td>
+					</tr>
+
+					<tr id="final2jogoB">
+						<td><img src="img/bandeira_interrogacao.svg" class="bandeira"></td>
+						<td>?</td>
+						<td><input class="placar" type="text" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="finalist(final2jogoA, final2jogoB, 15, false, true)"></td>
+						<td style="display: none;"></td>
+						<td style="font-size: 15px; border-top: 0;">Moscou - Arena Otkrytie</td>
+					</tr>
+				</table>
+			</tbody>
+		</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/sweetAlert.js"></script>
+	<script type="text/javascript" src="js/copa.js"></script>
+	<script type="text/javascript" src="js/FF.js"></script>
+</body>
+</html>

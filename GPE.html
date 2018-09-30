@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">	
+	<title>Copa 2018 - Grupo E</title>
+	<link rel="icon" href="img/logo-copa.png">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/tabela.css">
+</head>
+<body>
+	
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<span id="tituloGrupo">Fase de Grupo</span>
+		<a class="grupo" href="GPA.html">Grupo A</a>
+		<a class="grupo" href="GPB.html">Grupo B</a>
+		<a class="grupo" href="GPC.html">Grupo C</a>
+		<a class="grupo" href="GPD.html">Grupo D</a>
+		<a class="grupo" href="GPE.html">Grupo E</a>
+		<a class="grupo" href="GPF.html">Grupo F</a>
+		<a class="grupo" href="GPG.html">Grupo G</a>
+		<a class="grupo" href="GPH.html">Grupo H</a>
+		<a class="faseFinal" href="FF.html">Fase Final</a>
+		<center><button class="botaoReset" onclick="reset('eJogo')" type="button">RESETAR</button></center>
+	</div>
+	<span class="abrir" onclick="openNav()">&#9776; Abrir</span>
+
+	<div class="tabela">
+		
+		<span class="tituloGrupo">GRUPO E</span>
+		<table class="jogo">
+			
+			<tr>
+				<td><img src="img/costa_rica.png" class="bandeira" alt="costa rica"></td>
+				<td>COS</td>
+				<td><input class="placar" type="text" id="eJogo1a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(eJogo1a, eJogo1b, times[17], times[18], costa_rica, servia, aux[24], 17, 18, 4)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="eJogo1b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(eJogo1a, eJogo1b, times[17], times[18], costa_rica, servia, aux[24], 17, 18, 4)"></td>
+				<td>SER</td>
+				<td><img src="img/servia.png" class="bandeira" alt="servia"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">17/06 - 09:00</span><br>Samara - Arena Samara</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/brasil.png" class="bandeira" alt="brasil"></td>
+				<td>BRA</td>
+				<td><input class="placar" type="text" id="eJogo2a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(eJogo2a, eJogo2b, times[16], times[19], brasil, suica, aux[25], 16, 19, 4)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="eJogo2b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(eJogo2a, eJogo2b, times[16], times[19], brasil, suica, aux[25], 16, 19, 4)"></td>
+				<td>SUI</td>
+				<td><img src="img/suica.png" class="bandeira" alt="suíça"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">17/06 - 15:00</span><br>Rostov do Don - Arena Rostov</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/brasil.png" class="bandeira" alt="brasil"></td>
+				<td>BRA</td>
+				<td><input class="placar" type="text" id="eJogo3a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(eJogo3a, eJogo3b, times[16], times[17], brasil, costa_rica, aux[26], 16, 17, 4)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="eJogo3b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(eJogo3a, eJogo3b, times[16], times[17], brasil, costa_rica, aux[26], 16, 17, 4)"></td>
+				<td>COS</td>
+				<td><img src="img/costa_rica.png" class="bandeira" alt="costa rica"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">22/06 - 09:00</span><br>São Petersburgo - Zenit Arena</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/servia.png" class="bandeira" alt="servia"></td>
+				<td>SER</td>
+				<td><input class="placar" type="text" id="eJogo4a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(eJogo4a, eJogo4b, times[18], times[19], servia, suica, aux[27], 18, 19, 4)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="eJogo4b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(eJogo4a, eJogo4b, times[18], times[19], servia, suica, aux[27], 18, 19, 4)"></td>
+				<td>SUI</td>
+				<td><img src="img/suica.png" class="bandeira" alt="suíça"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">22/06 - 15:00</span><br>Kaliningrado - Estádio de Kaliningrado</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/servia.png" class="bandeira" alt="servia"></td>
+				<td>SER</td>
+				<td><input class="placar" type="text" id="eJogo5a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(eJogo5a, eJogo5b, times[18], times[16], servia, brasil, aux[28], 18, 16, 4)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="eJogo5b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(eJogo5a, eJogo5b, times[18], times[16], servia, brasil, aux[28], 18, 16, 4)"></td>
+				<td>BRA</td>
+				<td><img src="img/brasil.png" class="bandeira" alt="brasil"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">27/06 - 15:00</span><br>Moscou - Arena Otkrytie</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/suica.png" class="bandeira" alt="suíça"></td>
+				<td>SUI</td>
+				<td><input class="placar" type="text" id="eJogo6a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(eJogo6a, eJogo6b, times[19], times[17], suica, costa_rica, aux[29], 19, 17, 4)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="eJogo6b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(eJogo6a, eJogo6b, times[19], times[17], suica, costa_rica, aux[29], 19, 17, 4)"></td>
+				<td>COS</td>
+				<td><img src="img/costa_rica.png" class="bandeira" alt="costa rica"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">27/06 - 15:00</span><br>Níjni Novgorod - Estádio de Níjni Novgorod</td>
+			</tr>
+		</table>
+		
+		<div class="tabelaPontuacao">
+	
+			<table class="pontos">
+				<tbody class="pontosList">
+					<tr>
+						<th class="colocacao">&#9867;</th>
+						<th>CLASSIFICAÇÃO</th>
+						<th>P</th>
+						<th>J</th>
+						<th>V</th>
+						<th>E</th>
+						<th>D</th>
+						<th>GP</th>
+						<th>GC</th>
+						<th>SG</th>
+						<th>%</th>
+					</tr>
+					<tr id="brasil">
+						<td class="colocacao">&#9867;</td>
+						<td>Brasil</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="display: none;">times[16]</td>
+					</tr>
+					<tr id="costa_rica">
+						<td class="colocacao">&#9867;</td>
+						<td>Costa Rica</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="display: none;">times[17]</td>
+					</tr>
+					<tr id="servia">
+						<td class="colocacao">&#9867;</td>
+						<td>Sérvia</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="display: none;">times[18]</td>
+					</tr>
+					<tr id="suica">
+						<td class="colocacao">&#9867;</td>
+						<td>Suíça</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="display: none;">times[19]</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="visaoGeral" style="display: none;">
+			<span style="border: 2px solid black; background-color: #e7e1db; padding: 0 5px 0 5px;">CLASSIFICADOS GRUPO E</span>
+			<table id="classif">
+				<tbody>
+					<tr>
+						<th style="color: #127912;">1</th>
+						<th><img class="bandeira" src=""></th>
+						<th style="text-decoration: underline; text-decoration-color: #127912;"></th>
+					</tr>
+					<tr>
+						<th style="color: #127912;">2</th>
+						<th><img class="bandeira" src=""></th>
+						<th style="text-decoration: underline; text-decoration-color: #127912;"></th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/copa.js"></script>
+	<script type="text/javascript" src="js/GE.js"></script>
+</body>
+</html>

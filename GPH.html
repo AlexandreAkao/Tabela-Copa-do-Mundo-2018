@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">	
+	<title>Copa 2018 - Grupo H</title>
+	<link rel="icon" href="img/logo-copa.png">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/tabela.css">
+</head>
+<body>
+	
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<span id="tituloGrupo">Fase de Grupo</span>
+		<a class="grupo" href="GPA.html">Grupo A</a>
+		<a class="grupo" href="GPB.html">Grupo B</a>
+		<a class="grupo" href="GPC.html">Grupo C</a>
+		<a class="grupo" href="GPD.html">Grupo D</a>
+		<a class="grupo" href="GPE.html">Grupo E</a>
+		<a class="grupo" href="GPF.html">Grupo F</a>
+		<a class="grupo" href="GPG.html">Grupo G</a>
+		<a class="grupo" href="GPH.html">Grupo H</a>
+		<a class="faseFinal" href="FF.html">Fase Final</a>
+		<center><button class="botaoReset" onclick="reset('hJogo')" type="button">RESETAR</button></center>
+	</div>
+	<span class="abrir" onclick="openNav()">&#9776; Abrir</span>
+
+	<div class="tabela">
+		
+		<span class="tituloGrupo">GRUPO H</span>
+		<table class="jogo">
+			
+			<tr>
+				<td><img src="img/colombia.png" class="bandeira" alt="colombia"></td>
+				<td>COL</td>
+				<td><input class="placar" type="text" id="hJogo1a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(hJogo1a, hJogo1b, times[28], times[29], colombia, japao, aux[42], 28, 29, 7)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="hJogo1b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(hJogo1a, hJogo1b, times[28], times[29], colombia, japao, aux[42], 28, 29, 7)"></td>
+				<td>JAP</td>
+				<td><img src="img/japao.png" class="bandeira" alt="japão"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">19/06 - 09:00</span><br>Saransk - Arena Mordovia</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/polonia.png" class="bandeira" alt="polônia"></td>
+				<td>POL</td>
+				<td><input class="placar" type="text" id="hJogo2a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(hJogo2a, hJogo2b, times[30], times[31], polonia, senegal, aux[43], 30, 31, 7)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="hJogo2b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(hJogo2a, hJogo2b, times[30], times[31], polonia, senegal, aux[43], 30, 31, 7)"></td>
+				<td>SEN</td>
+				<td><img src="img/senegal.png" class="bandeira" alt="senegal"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">19/06 - 12:00</span><br>Moscou - Arena Otkrytie</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/japao.png" class="bandeira" alt="japão"></td>
+				<td>JAP</td>
+				<td><input class="placar" type="text" id="hJogo3a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(hJogo3a, hJogo3b, times[29], times[31], japao, senegal, aux[44], 29, 31, 7)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="hJogo3b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(hJogo3a, hJogo3b, times[29], times[31], japao, senegal, aux[44], 29, 31, 7)"></td>
+				<td>SEN</td>
+				<td><img src="img/senegal.png" class="bandeira" alt="senegal"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">24/06 - 12:00</span><br>Ecaterimburgo - Arena Ekaterinburg</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/polonia.png" class="bandeira" alt="polonia"></td>
+				<td>POL</td>
+				<td><input class="placar" type="text" id="hJogo4a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(hJogo4a, hJogo4b, times[30], times[28], polonia, colombia, aux[45], 30, 28, 7)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="hJogo4b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(hJogo4a, hJogo4b, times[30], times[28], polonia, colombia, aux[45], 30, 28, 7)"></td>
+				<td>COL</td>
+				<td><img src="img/colombia.png" class="bandeira" alt="colômbia"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">24/06 - 15:00</span><br>Cazã - Arena Kazan</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/japao.png" class="bandeira" alt="japão"></td>
+				<td>JAP</td>
+				<td><input class="placar" type="text" id="hJogo5a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(hJogo5a, hJogo5b, times[29], times[30], japao, polonia, aux[46], 29, 30, 7)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="hJogo5b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(hJogo5a, hJogo5b, times[29], times[30], japao, polonia, aux[46], 29, 30, 7)"></td>
+				<td>POL</td>
+				<td><img src="img/polonia.png" class="bandeira" alt="polônia"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">28/06 - 11:00</span><br>Volgogrado - Arena Volgogrado</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/senegal.png" class="bandeira" alt="senegal"></td>
+				<td>SEN</td>
+				<td><input class="placar" type="text" id="hJogo6a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(hJogo6a, hJogo6b, times[31], times[28], senegal, colombia, aux[47], 31, 28, 7)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="hJogo6b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(hJogo6a, hJogo6b, times[31], times[28], senegal, colombia, aux[47], 31, 28, 7)"></td>
+				<td>COL</td>
+				<td><img src="img/colombia.png" class="bandeira" alt="colômbia"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">28/06 - 11:00</span><br>Samara - Arena Samara</td>
+			</tr>
+		</table>
+		
+		<div class="tabelaPontuacao">
+	
+			<table class="pontos">
+				<tbody class="pontosList">
+					<tr>
+						<th class="colocacao">&#9867;</th>
+						<th>CLASSIFICAÇÃO</th>
+						<th>P</th>
+						<th>J</th>
+						<th>V</th>
+						<th>E</th>
+						<th>D</th>
+						<th>GP</th>
+						<th>GC</th>
+						<th>SG</th>
+						<th>%</th>
+					</tr>
+					<tr id="colombia">
+						<td class="colocacao">&#9867;</td>
+						<td>Colômbia</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="display: none;">times[28]</td>
+					</tr>
+					<tr id="japao">
+						<td class="colocacao">&#9867;</td>
+						<td>Japão</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="display: none;">times[29]</td>
+					</tr>
+					<tr id="polonia">
+						<td class="colocacao">&#9867;</td>
+						<td>Polônia</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="display: none;">times[30]</td>
+					</tr>
+					<tr id="senegal">
+						<td class="colocacao">&#9867;</td>
+						<td>Senegal</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="display: none;">times[31]</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="visaoGeral" style="display: none;">
+			<span style="border: 2px solid black; background-color: #e7e1db; padding: 0 5px 0 5px;">CLASSIFICADOS GRUPO H</span>
+			<table id="classif">
+				<tbody>
+					<tr>
+						<th style="color: #127912;">1</th>
+						<th><img class="bandeira" src=""></th>
+						<th style="text-decoration: underline; text-decoration-color: #127912;"></th>
+					</tr>
+					<tr>
+						<th style="color: #127912;">2</th>
+						<th><img class="bandeira" src=""></th>
+						<th style="text-decoration: underline; text-decoration-color: #127912;"></th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/copa.js"></script>
+	<script type="text/javascript" src="js/GH.js"></script>
+</body>
+</html>

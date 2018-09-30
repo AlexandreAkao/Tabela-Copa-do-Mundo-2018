@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">	
+	<title>Copa 2018 - Grupo B</title>
+	<link rel="icon" href="img/logo-copa.png">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/tabela.css">
+</head>
+<body>
+	
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<span id="tituloGrupo">Fase de Grupo</span>
+		<a class="grupo" href="GPA.html">Grupo A</a>
+		<a class="grupo" href="GPB.html">Grupo B</a>
+		<a class="grupo" href="GPC.html">Grupo C</a>
+		<a class="grupo" href="GPD.html">Grupo D</a>
+		<a class="grupo" href="GPE.html">Grupo E</a>
+		<a class="grupo" href="GPF.html">Grupo F</a>
+		<a class="grupo" href="GPG.html">Grupo G</a>
+		<a class="grupo" href="GPH.html">Grupo H</a>
+		<a class="faseFinal" href="FF.html">Fase Final</a>
+		<center><button class="botaoReset" onclick="reset('bJogo')" type="button">RESETAR</button></center>
+	</div>
+	<span class="abrir" onclick="openNav()">&#9776; Abrir</span>
+
+	<div class="tabela">
+		
+		<span class="tituloGrupo">GRUPO B</span>
+		<table class="jogo">
+			
+			<tr>
+				<td><img src="img/marrocos.png" class="bandeira" alt="marrocos"></td>
+				<td>MAR</td>
+				<td><input class="placar" type="text" id="bJogo1a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(bJogo1a, bJogo1b, times[6], times[5], marrocos, ira, aux[6], 6, 5, 1)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="bJogo1b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(bJogo1a, bJogo1b, times[6], times[5], marrocos, ira, aux[6], 6, 5, 1)"></td>
+				<td>IRA</td>
+				<td><img src="img/ira.png" class="bandeira" alt="irã"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">15/06 - 12:00</span><br>São Petersburgo - Zenit Arena</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/portugal.png" class="bandeira" alt="portugal"></td>
+				<td>POR</td>
+				<td><input class="placar" type="text" id="bJogo2a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(bJogo2a, bJogo2b, times[7], times[4], portugal, espanha, aux[7], 7, 4, 1)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="bJogo2b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(bJogo2a, bJogo2b, times[7], times[4], portugal, espanha, aux[7], 7, 4, 1)"></td>
+				<td>ESP</td>
+				<td><img src="img/espanha.png" class="bandeira" alt="espanha"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">15/06 - 15:00</span><br>Sóchi - Estádio Fisht</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/portugal.png" class="bandeira" alt="portugal"></td>
+				<td>POR</td>
+				<td><input class="placar" type="text" id="bJogo3a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(bJogo3a, bJogo3b, times[7], times[6], portugal, marrocos, aux[8], 7, 6, 1)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="bJogo3b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(bJogo3a, bJogo3b, times[7], times[6], portugal, marrocos, aux[8], 7, 6, 1)"></td>
+				<td>MAR</td>
+				<td><img src="img/marrocos.png" class="bandeira" alt="marrocos"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">20/06 - 09:00</span><br>Moscou - Estádio Lujniki</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/ira.png" class="bandeira" alt="irã"></td>
+				<td>IRA</td>
+				<td><input class="placar" type="text" id="bJogo4a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(bJogo4a, bJogo4b, times[5], times[4], ira, espanha, aux[9], 5, 4, 1)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="bJogo4b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(bJogo4a, bJogo4b, times[5], times[4], ira, espanha, aux[9], 5, 4, 1)"></td>
+				<td>ESP</td>
+				<td><img src="img/espanha.png" class="bandeira" alt="espanha"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">20/06 - 15:00</span><br>Cazã - Arena Kazan</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/ira.png" class="bandeira" alt="ira"></td>
+				<td>IRA</td>
+				<td><input class="placar" type="text" id="bJogo5a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(bJogo5a, bJogo5b, times[5], times[7], ira, portugal, aux[10], 5, 7, 1)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="bJogo5b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(bJogo5a, bJogo5b, times[5], times[7], ira, portugal, aux[10], 5, 7, 1)"></td>
+				<td>POR</td>
+				<td><img src="img/portugal.png" class="bandeira" alt="portugal"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">25/06 - 15:00</span><br>Saransk - Arena Mordovia</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/espanha.png" class="bandeira" alt="espanha"></td>
+				<td>ESP</td>
+				<td><input class="placar" type="text" id="bJogo6a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(bJogo6a, bJogo6b, times[4], times[6], espanha, marrocos, aux[11], 4, 6, 1)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="bJogo6b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(bJogo6a, bJogo6b, times[4], times[6], espanha, marrocos, aux[11], 4, 6, 1)"></td>
+				<td>MAR</td>
+				<td><img src="img/marrocos.png" class="bandeira" alt="marrocos"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">25/06 - 15:00</span><br>Kaliningrado - Estádio de Kaliningrado</td>
+			</tr>
+		</table>
+		
+		<div class="tabelaPontuacao">
+	
+			<table class="pontos">
+				<tbody class="pontosList">
+					<tr>
+						<th class="colocacao">&#9867;</th>
+						<th>CLASSIFICAÇÃO</th>
+						<th>P</th>
+						<th>J</th>
+						<th>V</th>
+						<th>E</th>
+						<th>D</th>
+						<th>GP</th>
+						<th>GC</th>
+						<th>SG</th>
+						<th>%</th>
+					</tr>
+					<tr id="espanha">
+						<td class="colocacao">&#9867;</td>
+						<td>Espanha</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="display: none;">times[4]</td>
+					</tr>
+					<tr id="ira">
+						<td class="colocacao">&#9867;</td>
+						<td>Irã</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="display: none;">times[5]</td>
+					</tr>
+					<tr id="marrocos">
+						<td class="colocacao">&#9867;</td>
+						<td>Marrocos</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="display: none;">times[6]</td>
+					</tr>
+					<tr id="portugal">
+						<td class="colocacao">&#9867;</td>
+						<td>Portugal</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="display: none;">times[7]</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<div id="visaoGeral" style="display: none;">
+			<span style="border: 2px solid black; background-color: #e7e1db; padding: 0 5px 0 5px;">CLASSIFICADOS GRUPO B</span>
+			<table id="classif">
+				<tbody>
+					<tr>
+						<th style="color: #127912;">1</th>
+						<th><img class="bandeira" src=""></th>
+						<th style="text-decoration: underline; text-decoration-color: #127912;"></th>
+					</tr>
+					<tr>
+						<th style="color: #127912;">2</th>
+						<th><img class="bandeira" src=""></th>
+						<th style="text-decoration: underline; text-decoration-color: #127912;"></th>
+					</tr>
+				</tbody>
+			</table>
+		</div>		
+	</div>
+	
+	<script type="text/javascript" src="js/copa.js"></script>
+	<script type="text/javascript" src="js/GB.js"></script>
+</body>
+</html>

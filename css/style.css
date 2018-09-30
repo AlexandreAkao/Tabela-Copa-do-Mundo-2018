@@ -1,0 +1,139 @@
+body {
+    font-family: "verdana";
+}
+.abrir{
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    font-size: 40px;
+    cursor: pointer;
+    position: fixed;
+    color: white;
+    margin-left: 1%;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #B9141A;
+    border-right: 3px solid black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #1462b9;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#tituloGrupo{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 3px solid black;
+    user-select: none;
+}
+.grupo::before{
+    content: "\25B8";
+}
+.contato::before{
+    content: "\2709";
+}
+.faseFinal{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+.tabela{
+    margin-top: 2%;
+    margin-left: 20%;
+    user-select: none;
+}
+.botaoReset{
+    width: 80%;
+    background-color: #5d0a0d;
+    border: none;
+    color: white;
+    padding: 7.5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.botaoReset:hover{
+    background-color: #9b484c;
+}
+.botaoReset:active{
+    background-color: #5d0a0d;
+}
+.info{
+    color: #484848;
+    font-size: 15px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 15px;
+  margin: 2% 0 0 20%;
+  padding: 0 4% 1% 0;
+}
+.grid-item {
+  background-color: rgba(72, 72, 72, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0px;
+  font-size: 15px;
+  margin: 0px;
+  text-align: center;
+}
+.tabelaOitavas{
+    margin: 15% 0 0 0;
+}
+.tabelaQuartas{
+    margin: 50% 0 0 0;
+}
+.tabelaSemi{
+    margin: 145% 0 0 0;
+}
+.tabelaFinal{
+    margin: 170% 0 0 0;
+}
+.topo1{
+    margin-top: 15%;
+}
+.topo2{
+    margin-top: 60%;
+}
+.topo3{
+    margin-top: 0; 
+}
+.terc{
+    margin-top: 132%; 
+}

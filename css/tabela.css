@@ -1,0 +1,61 @@
+body{
+	background-image: url(../img/foot2.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+.placar{
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	font-family: "verdana";
+	font-size: 20px;
+	text-align: center;
+}
+.bandeira{
+	height: 30px;
+	width: 40px;
+	vertical-align: middle;
+}
+.jogo{
+	font-family: "verdana";
+	font-size: 30px;
+	vertical-align: middle;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+table{
+	width: 80%;
+	text-align: center;
+}
+table, th, td {
+   background-color: #e7e1db;
+   border: 1px solid black;
+}
+.tituloGrupo{
+	font-family: "verdana";
+	font-size: 50px;
+	background-color: #e7e1db;
+	text-align: center;
+	padding: 0 10px 0 10px;
+	border: 2px solid black;
+	border-bottom: 3px solid #B9141A;
+}
+.pontos th{
+	color: #B9141A;
+}
+.colocacao{
+	color: #4CAF50;
+	font-weight: bold;
+	text-shadow: 1px 1px #48484e;
+}
+.tabelaPontuacao{
+	margin-bottom: 15px;
+}
+table.tabelaOitavas,
+table.tabelaQuartas,
+table.tabelaSemi,
+table.tabelaFinal,
+table.terc,
+table.terc1{
+	width: 100%;
+}

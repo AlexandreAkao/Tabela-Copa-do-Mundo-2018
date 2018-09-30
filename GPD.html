@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">	
+	<title>Copa 2018 - Grupo D</title>
+	<link rel="icon" href="img/logo-copa.png">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/tabela.css">
+</head>
+<body>
+	
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<span id="tituloGrupo">Fase de Grupo</span>
+		<a class="grupo" href="GPA.html">Grupo A</a>
+		<a class="grupo" href="GPB.html">Grupo B</a>
+		<a class="grupo" href="GPC.html">Grupo C</a>
+		<a class="grupo" href="GPD.html">Grupo D</a>
+		<a class="grupo" href="GPE.html">Grupo E</a>
+		<a class="grupo" href="GPF.html">Grupo F</a>
+		<a class="grupo" href="GPG.html">Grupo G</a>
+		<a class="grupo" href="GPH.html">Grupo H</a>
+		<a class="faseFinal" href="FF.html">Fase Final</a>
+		<center><button class="botaoReset" onclick="reset('dJogo')" type="button">RESETAR</button></center>
+	</div>
+	<span class="abrir" onclick="openNav()">&#9776; Abrir</span>
+
+	<div class="tabela">
+		
+		<span class="tituloGrupo">GRUPO D</span>
+		<table class="jogo">
+			
+			<tr>
+				<td><img src="img/argentina.png" class="bandeira" alt="argentina"></td>
+				<td>ARG</td>
+				<td><input class="placar" type="text" id="dJogo1a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(dJogo1a, dJogo1b, times[12], times[14], argentina, islandia, aux[18], 12, 14, 3)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="dJogo1b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(dJogo1a, dJogo1b, times[12], times[14], argentina, islandia, aux[18], 12, 14, 3)"></td>
+				<td>ISL</td>
+				<td><img src="img/islandia.png" class="bandeira" alt="islândia"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">26/06 - 11:00</span><br>Moscou - Arena Otkrytie</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/croacia.png" class="bandeira" alt="croacia"></td>
+				<td>CRO</td>
+				<td><input class="placar" type="text" id="dJogo2a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(dJogo2a, dJogo2b, times[13], times[15], croacia, nigeria, aux[19], 13, 15, 3)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="dJogo2b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(dJogo2a, dJogo2b, times[13], times[15], croacia, nigeria, aux[19], 13, 15, 3)"></td>
+				<td>NIG</td>
+				<td><img src="img/nigeria.png" class="bandeira" alt="nigeria"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">26/06 - 11:00</span><br>Kaliningrado - Estádio de Kaliningrado</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/argentina.png" class="bandeira" alt="argentina"></td>
+				<td>ARG</td>
+				<td><input class="placar" type="text" id="dJogo3a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(dJogo3a, dJogo3b, times[12], times[13], argentina, croacia, aux[20], 12, 13, 3)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="dJogo3b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(dJogo3a, dJogo3b, times[12], times[13], argentina, croacia, aux[20], 12, 13, 3)"></td>
+				<td>CRO</td>
+				<td><img src="img/croacia.png" class="bandeira" alt="croacia"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">26/06 - 11:00</span><br>Níjni Novgorod - Estádio de Níjni Novgorod</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/nigeria.png" class="bandeira" alt="nigeria"></td>
+				<td>NIG</td>
+				<td><input class="placar" type="text" id="dJogo4a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(dJogo4a, dJogo4b, times[15], times[14], nigeria, islandia, aux[21], 15, 14, 3)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="dJogo4b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(dJogo4a, dJogo4b, times[15], times[14], nigeria, islandia, aux[21], 15, 14, 3)"></td>
+				<td>ISL</td>
+				<td><img src="img/islandia.png" class="bandeira" alt="islandia"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">26/06 - 11:00</span><br>Volgogrado - Arena Volgogrado</td>
+			</tr>
+			
+			<tr>
+				<td><img src="img/nigeria.png" class="bandeira" alt="nigeria"></td>
+				<td>NIG</td>
+				<td><input class="placar" type="text" id="dJogo5a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(dJogo5a, dJogo5b, times[15], times[12], nigeria, argentina, aux[22], 15, 12, 3)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="dJogo5b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(dJogo5a, dJogo5b, times[15], times[12], nigeria, argentina, aux[22], 15, 12, 3)"></td>
+				<td>ARG</td>
+				<td><img src="img/argentina.png" class="bandeira" alt="argentina"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">26/06 - 11:00</span><br>São Petersburgo - Zenit Arena</td>
+			</tr>
+
+			<tr>
+				<td><img src="img/islandia.png" class="bandeira" alt="islandia"></td>
+				<td>ISL</td>
+				<td><input class="placar" type="text" id="dJogo6a" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(dJogo6a, dJogo6b, times[14], times[13], islandia, croacia, aux[23], 14, 13, 3)"></td>
+				<td>X</td>
+				<td><input class="placar" type="text" id="dJogo6b" maxLength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="comparar(dJogo6a, dJogo6b, times[14], times[13], islandia, croacia, aux[23], 14, 13, 3)"></td>
+				<td>CRO</td>
+				<td><img src="img/croacia.png" class="bandeira" alt="croacia"></td>
+				<td class="info"><span style="color: black; font-size: 18px;">26/06 - 11:00</span><br>Rostov do Don - Arena Rostov</td>
+			</tr>
+		</table>
+		
+		<div class="tabelaPontuacao">
+	
+			<table class="pontos">
+				<tbody class="pontosList">
+					<tr>
+						<th class="colocacao">&#9867;</th>
+						<th>CLASSIFICAÇÃO</th>
+						<th>P</th>
+						<th>J</th>
+						<th>V</th>
+						<th>E</th>
+						<th>D</th>
+						<th>GP</th>
+						<th>GC</th>
+						<th>SG</th>
+						<th>%</th>
+					</tr>
+					<tr id="argentina">
+						<td class="colocacao">&#9867;</td>
+						<td>Argentina</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="display: none;">times[12]</td>
+					</tr>
+					<tr id="croacia">
+						<td class="colocacao">&#9867;</td>
+						<td>Croácia</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="display: none;">times[13]</td>
+					</tr>
+					<tr id="islandia">
+						<td class="colocacao">&#9867;</td>
+						<td>Islândia</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="display: none;">times[14]</td>
+					</tr>
+					<tr id="nigeria">
+						<td class="colocacao">&#9867;</td>
+						<td>Nigéria</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="display: none;">times[15]</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="visaoGeral" style="display: none;">
+			<span style="border: 2px solid black; background-color: #e7e1db; padding: 0 5px 0 5px;">CLASSIFICADOS GRUPO D</span>
+			<table id="classif">
+				<tbody>
+					<tr>
+						<th style="color: #127912;">1</th>
+						<th><img class="bandeira" src=""></th>
+						<th style="text-decoration: underline; text-decoration-color: #127912;"></th>
+					</tr>
+					<tr>
+						<th style="color: #127912;">2</th>
+						<th><img class="bandeira" src=""></th>
+						<th style="text-decoration: underline; text-decoration-color: #127912;"></th>
+					</tr>
+				</tbody>
+			</table>
+		</div>			
+	</div>
+
+	<script type="text/javascript" src="js/copa.js"></script>
+	<script type="text/javascript" src="js/GD.js"></script>
+</body>
+</html>
